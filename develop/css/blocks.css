@@ -10,6 +10,8 @@
   background-repeat: no-repeat;
 
   padding-top: 2.125rem;
+  margin: 0 auto;
+  max-width: 180rem;
   min-height: 33.625rem;
 }
 

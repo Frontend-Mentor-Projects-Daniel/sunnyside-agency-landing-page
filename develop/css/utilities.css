@@ -1,0 +1,103 @@
+/**------------------- 
+**    ALIGNMENT
+--------------------*/
+.margin-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-start {
+  text-align: start;
+}
+
+/**------------------- 
+**     COLOURS
+--------------------*/
+/** background */
+.bg-soft-red {
+  background-color: hsl(var(--clr-soft-red), var(--hsla));
+}
+
+.bg-yellow {
+  background-color: hsl(var(--clr-yellow), var(--hsla));
+}
+
+.bg-dark-desaturated-cyan {
+  background-color: hsl(var(--clr-dark-desaturated-cyan), var(--hsla));
+}
+
+.bg-dark-blue {
+  background-color: hsl(var(--clr-dark-blue), var(--hsla));
+}
+
+.bg-dark-moderate-cyan {
+  background-color: hsl(var(--clr-dark-moderate-cyan), var(--hsla));
+}
+
+.bg-dark-desaturated-blue {
+  background-color: hsl(var(--clr-dark-desaturated-blue), var(--hsla));
+}
+
+.bg-dark-grayish-blue {
+  background-color: hsl(var(--clr-dark-grayish-blue), var(--hsla));
+}
+
+.bg-grayish-blue {
+  background-color: hsl(var(--clr-grayish-blue), var(--hsla));
+}
+
+.bg-white {
+  background-color: hsl(var(--clr-white), var(--hsla));
+}
+
+/** text */
+.text-soft-red {
+  color: hsl(var(--clr-soft-red), var(--hsla));
+}
+
+.text-yellow {
+  color: hsl(var(--clr-yellow), var(--hsla));
+}
+
+.text-dark-desaturated-cyan {
+  color: hsl(var(--clr-dark-desaturated-cyan), var(--hsla));
+}
+
+.text-dark-blue {
+  color: hsl(var(--clr-dark-blue), var(--hsla));
+}
+
+.text-dark-moderate-cyan {
+  color: hsl(var(--clr-dark-moderate-cyan), var(--hsla));
+}
+
+.text-dark-desaturated-blue {
+  color: hsl(var(--clr-dark-desaturated-blue), var(--hsla));
+}
+
+.text-dark-grayish-blue {
+  color: hsl(var(--clr-dark-grayish-blue), var(--hsla));
+}
+
+.text-grayish-blue {
+  color: hsl(var(--clr-grayish-blue), var(--hsla));
+}
+
+.text-white {
+  color: hsl(var(--clr-white), var(--hsla));
+}
+
+/**------------------- 
+**       FLEX
+--------------------*/
+.flex-col {
+  --gap: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, 1rem);
+}

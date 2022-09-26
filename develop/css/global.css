@@ -1,0 +1,183 @@
+/* @link https://utopia.fyi/type/calculator?c=375,18,1.25,1440,18,1.17,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+/* @link https://utopia.fyi/space/calculator?c=375,18,1.2,1440,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+  /* COLOURS */
+  /* primary */
+  --clr-soft-red: 7, 99%, 70%;
+  --clr-yellow: 51, 100%, 49%;
+  /* graphic design text */
+  --clr-dark-desaturated-cyan: 167, 40%, 24%;
+  /* photography text */
+  --clr-dark-blue: 198, 62%, 26%;
+  /* footer */
+  --clr-dark-moderate-cyan: 168, 34%, 41%;
+
+  /* neutral */
+  --clr-very-dark-desaturated-blue: 212, 27%, 19%;
+  --clr-very-dark-grayish-blue: 213, 9%, 39%;
+  --clr-dark-grayish-blue: 232, 10%, 55%;
+  --clr-grayish-blue: 210, 4%, 67%;
+  --clr-white: 0, 0%, 100%;
+
+  --hsla: 1;
+
+  /* TYPE SCALE */
+  --step--2: clamp(0.72rem, calc(0.68rem + 0.15vw), 0.82rem);
+  --step--1: clamp(0.9rem, calc(0.88rem + 0.09vw), 0.96rem);
+  --step-0: clamp(1.13rem, calc(1.13rem + 0vw), 1.13rem);
+  --step-1: clamp(1.32rem, calc(1.44rem + -0.14vw), 1.41rem);
+  --step-2: clamp(1.54rem, calc(1.83rem + -0.33vw), 1.76rem);
+  --step-3: clamp(1.8rem, calc(2.34rem + -0.59vw), 2.2rem);
+  --step-4: clamp(2.11rem, calc(2.97rem + -0.96vw), 2.75rem);
+  --step-5: clamp(2.47rem, calc(3.77rem + -1.45vw), 3.43rem);
+
+  /* FLUID SPACE */
+  --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
+  --space-2xs: clamp(0.56rem, calc(0.56rem + 0vw), 0.56rem);
+  --space-xs: clamp(0.88rem, calc(0.88rem + 0vw), 0.88rem);
+  --space-s: clamp(1.13rem, calc(1.13rem + 0vw), 1.13rem);
+  --space-m: clamp(1.69rem, calc(1.69rem + 0vw), 1.69rem);
+  --space-l: clamp(2.25rem, calc(2.25rem + 0vw), 2.25rem);
+  --space-xl: clamp(3.38rem, calc(3.38rem + 0vw), 3.38rem);
+  --space-2xl: clamp(4.5rem, calc(4.5rem + 0vw), 4.5rem);
+  --space-3xl: clamp(6.75rem, calc(6.75rem + 0vw), 6.75rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.31rem, calc(0.22rem + 0.38vw), 0.56rem);
+  --space-2xs-xs: clamp(0.56rem, calc(0.45rem + 0.47vw), 0.88rem);
+  --space-xs-s: clamp(0.88rem, calc(0.79rem + 0.38vw), 1.13rem);
+  --space-s-m: clamp(1.13rem, calc(0.93rem + 0.85vw), 1.69rem);
+  --space-m-l: clamp(1.69rem, calc(1.49rem + 0.85vw), 2.25rem);
+  --space-l-xl: clamp(2.25rem, calc(1.85rem + 1.69vw), 3.38rem);
+  --space-xl-2xl: clamp(3.38rem, calc(2.98rem + 1.69vw), 4.5rem);
+  --space-2xl-3xl: clamp(4.5rem, calc(3.71rem + 3.38vw), 6.75rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.13rem, calc(0.73rem + 1.69vw), 2.25rem);
+
+  /* FONT FAMILY */
+  --ff-barlow: 'Barlow', sans-serif;
+  --ff-fraunces: 'Fraunces', serif;
+
+  /* FONT WEIGHT */
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-weight: var(--fw-black);
+}
+
+nav a,
+p,
+.p-small,
+.testimonial p,
+h5 span,
+footer a {
+  font-weight: var(--fw-semibold);
+}
+
+h1 {
+  color: var(--clr-white);
+  font-family: var(--ff-fraunces);
+  font-size: var(--step-5);
+  line-height: 3.0825rem;
+}
+
+h2 {
+  color: var(--clr-very-dark-desaturated-blue);
+  font-family: var(--ff-fraunces);
+  font-size: var(--step-4);
+  line-height: 2.5rem;
+}
+
+h3 {
+  color: var(--clr-dark-desaturated-cyan);
+  font-family: var(--ff-fraunces);
+  font-size: 1.75rem;
+}
+
+h4 {
+  color: var(--clr-grayish-blue);
+  font-family: var(--ff-fraunces);
+  font-size: clamp(1rem, 0.9119718309859155rem + 0.3755868544600939vw, 1.25rem);
+  letter-spacing: 0.3125rem;
+}
+
+h5 {
+  color: var(--clr-grayish-blue);
+  font-family: var(--ff-fraunces);
+  font-size: 1.125rem;
+}
+
+p {
+  color: var(--clr-dark-grayish-blue);
+  font-family: var(--ff-barlow);
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+
+a {
+  color: var(--clr-very-dark-desaturated-blue);
+  font-family: var(--ff-fraunces);
+  font-size: 0.9375rem;
+}
+
+h5 span {
+  color: var(--clr-very-dark-desaturated-blue);
+  font-family: var(--ff-barlow);
+  font-size: 0.875rem;
+}
+
+nav a {
+  color: var(--clr-white);
+  font-family: var(--ff-barlow);
+  font-size: 1.25rem;
+}
+
+footer a {
+  color: var(--clr-dark-moderate-cyan);
+  font-family: var(--ff-barlow);
+  font-size: 1.125rem;
+}
+
+.testimonial p {
+  color: var(--clr-very-dark-grayish-blue);
+  font-family: var(--ff-barlow);
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+.p-small {
+  color: var(--clr-dark-moderate-cyan);
+  font-family: var(--ff-barlow);
+  font-size: 1rem;
+  line-height: 1.6875rem;
+}
+
+@media only screen and (min-width: 48em) {
+  h3 {
+    line-height: 2.5rem;
+  }
+
+  nav a {
+    font-size: 1.125rem;
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+/*&------------------- 
+**     BUTTON
+--------------------*/
+.btn {
+  font-family: var(--ff-fraunces);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-bold);
+}

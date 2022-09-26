@@ -1,0 +1,24 @@
+nav[data-state='mobile'] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  top: 5.25rem;
+  right: 1.5rem;
+
+  background-color: hsl(var(--clr-white));
+  clip-path: polygon(0 100%, 100% 100%, 100% 21%, 100% 0, 90% 5%, 67% 5%, 0 5%);
+  padding-inline: var(--space-l-xl);
+  padding-block: var(--space-3xs-2xl);
+}
+
+nav[data-state='mobile'] ul {
+  flex-direction: column;
+  align-items: center;
+}
+
+nav[data-state='mobile'] ul a {
+  color: hsl(var(--clr-dark-grayish-blue));
+  font-size: 1.25rem;
+}

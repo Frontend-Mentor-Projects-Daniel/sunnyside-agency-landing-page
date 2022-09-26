@@ -1,0 +1,76 @@
+/**------------------- 
+**      HEADER
+--------------------*/
+.header {
+  --gutters: var(--space-m-l);
+
+  background-image: url('../assets/images/mobile/image-header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 2.125rem;
+  min-height: 33.625rem;
+}
+
+.header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 12.625em) {
+  .header__bar {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .header {
+    background-image: url('../assets/images/desktop/image-header.jpg');
+    min-height: 50rem;
+  }
+}
+
+/*?------------------- 
+*     NAV & MENU
+--------------------*/
+.hamburger-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.navigation,
+.navigation ul {
+  gap: var(--space-m-l);
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation ul a {
+  color: hsl(var(--clr-white));
+}
+
+@media only screen and (max-width: 12.625em) {
+  .hamburger-menu {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navigation[data-state='desktop'] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -92,6 +92,17 @@
 }
 
 /**------------------- 
+**     DISPLAY
+--------------------*/
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+/**------------------- 
 **       FLEX
 --------------------*/
 .flex-col {
@@ -100,4 +111,27 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap, 1rem);
+}
+
+.flex-row {
+  --gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap, 1rem);
+}
+
+/**------------------- 
+**  SCREEN READER
+--------------------*/
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }

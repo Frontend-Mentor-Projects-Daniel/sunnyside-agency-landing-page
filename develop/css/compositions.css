@@ -1,10 +1,13 @@
 /**------------------- 
 **      CENTER
 --------------------*/
+
 .center {
   box-sizing: content-box;
   margin-inline: auto;
-  max-inline-size: var(--measure, 90rem);
+  max-inline-size: var(--measure);
+  padding-inline-start: var(--gutters, 1rem);
+  padding-inline-end: var(--gutters, 1rem);
 }
 
 /**------------------- 

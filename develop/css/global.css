@@ -55,6 +55,7 @@
 
   /* Custom pairs */
   --space-s-l: clamp(1.13rem, calc(0.73rem + 1.69vw), 2.25rem);
+  --space-m-3xl: clamp(1.69rem, calc(-0.1rem + 7.61vw), 6.75rem);
   --space-l-xl: clamp(2.25rem, calc(1.35rem + 8.65vw), 3.38rem);
   --space-xl-2xl: clamp(3.38rem, calc(2.98rem + 1.69vw), 4.5rem);
   --space-2xl-3xl: clamp(4.5rem, calc(3.71rem + 3.38vw), 6.75rem);
@@ -166,11 +167,18 @@ footer a {
 }
 
 .p-small {
-  color: hsl(var(--clr-dark-moderate-cyan));
   font-family: var(--ff-barlow);
   font-size: 1rem;
   line-height: 1.6875rem;
+  max-width: 37ch;
 }
+
+/* .p-small--green {
+  color: hsl(var(--clr-dark-moderate-cyan));
+}
+
+.p-small--blue {
+} */
 
 @media only screen and (min-width: 48em) {
   h1 {

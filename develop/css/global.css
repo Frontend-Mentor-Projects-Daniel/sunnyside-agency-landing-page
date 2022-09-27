@@ -87,79 +87,83 @@ footer a {
 }
 
 h1 {
-  color: var(--clr-white);
+  color: hsl(var(--clr-white));
   font-family: var(--ff-fraunces);
   font-size: var(--step-5);
   line-height: 3.0825rem;
 }
 
 h2 {
-  color: var(--clr-very-dark-desaturated-blue);
+  color: hsl(var(--clr-very-dark-desaturated-blue));
   font-family: var(--ff-fraunces);
   font-size: var(--step-4);
   line-height: 2.5rem;
 }
 
 h3 {
-  color: var(--clr-dark-desaturated-cyan);
+  color: hsl(var(--clr-dark-desaturated-cyan));
   font-family: var(--ff-fraunces);
   font-size: 1.75rem;
 }
 
 h4 {
-  color: var(--clr-grayish-blue);
+  color: hsl(var(--clr-grayish-blue));
   font-family: var(--ff-fraunces);
   font-size: clamp(1rem, 0.9119718309859155rem + 0.3755868544600939vw, 1.25rem);
   letter-spacing: 0.3125rem;
 }
 
 h5 {
-  color: var(--clr-grayish-blue);
+  color: hsl(var(--clr-grayish-blue));
   font-family: var(--ff-fraunces);
   font-size: 1.125rem;
 }
 
 p {
-  color: var(--clr-dark-grayish-blue);
+  color: hsl(var(--clr-dark-grayish-blue));
   font-family: var(--ff-barlow);
   font-size: 1.125rem;
   line-height: 1.875rem;
 }
 
 a {
-  color: var(--clr-very-dark-desaturated-blue);
+  color: hsl(var(--clr-very-dark-desaturated-blue));
   font-family: var(--ff-fraunces);
   font-size: 0.9375rem;
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 h5 span {
-  color: var(--clr-very-dark-desaturated-blue);
+  color: hsl(var(--clr-very-dark-desaturated-blue));
   font-family: var(--ff-barlow);
   font-size: 0.875rem;
 }
 
-nav a {
-  color: var(--clr-white);
+footer a {
+  color: hsl(var(--clr-dark-moderate-cyan));
   font-family: var(--ff-barlow);
   font-size: 1.125rem;
 }
 
-footer a {
-  color: var(--clr-dark-moderate-cyan);
+.navigation-list a {
+  color: hsl(var(--clr-white));
   font-family: var(--ff-barlow);
   font-size: 1.125rem;
 }
 
 .testimonial p {
-  color: var(--clr-very-dark-grayish-blue);
+  color: hsl(var(--clr-very-dark-grayish-blue));
   font-family: var(--ff-barlow);
   font-size: 1.125rem;
   line-height: 2rem;
 }
 
 .p-small {
-  color: var(--clr-dark-moderate-cyan);
+  color: hsl(var(--clr-dark-moderate-cyan));
   font-family: var(--ff-barlow);
   font-size: 1rem;
   line-height: 1.6875rem;
@@ -188,17 +192,26 @@ footer a {
   font-family: var(--ff-fraunces);
   font-size: 0.9375rem;
   font-weight: var(--fw-bold);
-  padding: 1.2em 2.1em;
+  padding: 1.1em 1.5em;
   text-transform: uppercase;
+}
+
+.btn a {
+  color: hsl(var(--clr-very-dark-desaturated-blue));
+  font-family: var(--ff-fraunces);
 }
 
 @media only screen and (min-width: 48em) {
   .btn {
     background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-very-dark-desaturated-blue));
   }
 
   .btn:hover {
     background-color: hsl(var(--clr-white), 0.25);
+  }
+
+  .btn:hover > a {
     color: hsl(var(--clr-white));
   }
 }

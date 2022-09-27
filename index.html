@@ -51,26 +51,25 @@
           <img src="./develop/assets/images/logo.svg" alt="sunnyside" />
         </div>
 
-        <button
-          id="menu-toggle"
-          class="[ hamburger-menu ]"
-          aria-label="Open Main Menu"
-          aria-expanded="false"
-        >
-          <img
-            src="./develop/assets/images/icon-hamburger.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </button>
-
         <nav id="nav-bar" class="[ navigation ]" data-state="desktop">
-          <ul class="[ flex-row ]">
+          <button
+            id="menu-toggle"
+            class="[ hamburger-menu ]"
+            aria-label="Menu"
+            aria-expanded="false"
+          >
+            <img
+              src="./develop/assets/images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </button>
+          <ul class="[ navigation-list ] [ flex-row ]">
             <li><a href="#" aria-current="page">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
+            <li class="[ btn ]"><a href="#">contact</a></li>
           </ul>
-          <button class="[ btn ]">contact</button>
         </nav>
       </div>
     </header>

@@ -46,33 +46,58 @@
   position: relative;
 }
 
-.navigation,
-.navigation ul {
-  gap: var(--space-m-l);
+.navigation-list {
+  display: none;
 }
 
-.navigation ul {
-  list-style: none;
-}
-
-.navigation ul a {
-  color: hsl(var(--clr-white));
-}
-
-@media only screen and (max-width: 12.625em) {
-  .hamburger-menu {
-    flex-basis: 100%;
-  }
+.navigation-list {
+  gap: 2.9375rem;
 }
 
 @media only screen and (min-width: 48em) {
   .hamburger-menu {
     display: none;
   }
-
-  .navigation[data-state='desktop'] {
+  .navigation-list {
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .hamburger-menu[aria-expanded='true'] + .navigation-list {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
+
+    position: absolute;
+    top: 2.25rem;
+    right: 0rem;
+
+    background-color: hsl(var(--clr-white));
+    clip-path: polygon(
+      0 100%,
+      100% 100%,
+      100% 21%,
+      100% 0,
+      90% 5%,
+      67% 5%,
+      0 5%
+    );
+    padding-inline: var(--space-l-xl);
+    padding-block: var(--space-3xs-2xl);
+  }
+
+  .navigation {
+    position: relative;
+  }
+
+  .navigation-list a {
+    color: hsl(var(--clr-dark-grayish-blue));
+    font-size: 1.25rem;
+  }
+
+  .navigation-list .btn a {
+    color: hsl(var(--clr-very-dark-desaturated-blue));
   }
 }

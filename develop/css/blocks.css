@@ -101,3 +101,14 @@
     color: hsl(var(--clr-very-dark-desaturated-blue));
   }
 }
+
+/*?------------------- 
+*   TITLE & ARROW
+--------------------*/
+.header__title {
+  margin-top: var(--space-2xl-3xl);
+}
+
+.down-arrow {
+  margin-top: var(--space-xl-2xl);
+}

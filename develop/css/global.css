@@ -1,4 +1,4 @@
-/* @link https://utopia.fyi/type/calculator?c=375,18,1.25,1440,18,1.17,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+/* @link https://utopia.fyi/type/calculator?c=375,16,1.25,1440,20,1.3,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 /* @link https://utopia.fyi/space/calculator?c=375,18,1.2,1440,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 
 :root {
@@ -23,14 +23,14 @@
   --hsla: 1;
 
   /* TYPE SCALE */
-  --step--2: clamp(0.72rem, calc(0.68rem + 0.15vw), 0.82rem);
-  --step--1: clamp(0.9rem, calc(0.88rem + 0.09vw), 0.96rem);
-  --step-0: clamp(1.13rem, calc(1.13rem + 0vw), 1.13rem);
-  --step-1: clamp(1.32rem, calc(1.44rem + -0.14vw), 1.41rem);
-  --step-2: clamp(1.54rem, calc(1.83rem + -0.33vw), 1.76rem);
-  --step-3: clamp(1.8rem, calc(2.34rem + -0.59vw), 2.2rem);
-  --step-4: clamp(2.11rem, calc(2.97rem + -0.96vw), 2.75rem);
-  --step-5: clamp(2.47rem, calc(3.77rem + -1.45vw), 3.43rem);
+  --step--2: clamp(0.64rem, calc(0.61rem + 0.15vw), 0.74rem);
+  --step--1: clamp(0.8rem, calc(0.74rem + 0.24vw), 0.96rem);
+  --step-0: clamp(1rem, calc(0.91rem + 0.38vw), 1.25rem);
+  --step-1: clamp(1.25rem, calc(1.12rem + 0.56vw), 1.63rem);
+  --step-2: clamp(1.56rem, calc(1.37rem + 0.83vw), 2.11rem);
+  --step-3: clamp(1.95rem, calc(1.67rem + 1.19vw), 2.75rem);
+  --step-4: clamp(2.44rem, calc(2.04rem + 1.7vw), 3.57rem);
+  --step-5: clamp(3.05rem, calc(2.49rem + 2.39vw), 4.64rem);
 
   /* FLUID SPACE */
   --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
@@ -56,6 +56,8 @@
   /* Custom pairs */
   --space-s-l: clamp(1.13rem, calc(0.73rem + 1.69vw), 2.25rem);
   --space-l-xl: clamp(2.25rem, calc(1.35rem + 8.65vw), 3.38rem);
+  --space-xl-2xl: clamp(3.38rem, calc(2.98rem + 1.69vw), 4.5rem);
+  --space-2xl-3xl: clamp(4.5rem, calc(3.71rem + 3.38vw), 6.75rem);
   --space-3xs-2xl: clamp(0.31rem, calc(-3.05rem + 32.21vw), 4.5rem);
 
   /* FONT FAMILY */
@@ -89,14 +91,15 @@ footer a {
 h1 {
   color: hsl(var(--clr-white));
   font-family: var(--ff-fraunces);
-  font-size: var(--step-5);
+  font-size: var(--step-4);
+  letter-spacing: 0.5469rem;
   line-height: 3.0825rem;
 }
 
 h2 {
   color: hsl(var(--clr-very-dark-desaturated-blue));
   font-family: var(--ff-fraunces);
-  font-size: var(--step-4);
+  font-size: var(--step-3);
   line-height: 2.5rem;
 }
 
@@ -109,7 +112,7 @@ h3 {
 h4 {
   color: hsl(var(--clr-grayish-blue));
   font-family: var(--ff-fraunces);
-  font-size: clamp(1rem, 0.9119718309859155rem + 0.3755868544600939vw, 1.25rem);
+  font-size: var(--step-0);
   letter-spacing: 0.3125rem;
 }
 
@@ -170,6 +173,10 @@ footer a {
 }
 
 @media only screen and (min-width: 48em) {
+  h1 {
+    letter-spacing: 0.3906rem;
+  }
+
   h3 {
     line-height: 2.5rem;
   }

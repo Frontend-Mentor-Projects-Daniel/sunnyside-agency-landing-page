@@ -135,3 +135,10 @@
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+/**------------------- 
+**   TRANSFORMS
+--------------------*/
+.text-uppercase {
+  text-transform: uppercase;
+}

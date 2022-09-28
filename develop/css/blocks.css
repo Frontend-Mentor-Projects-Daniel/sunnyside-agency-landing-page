@@ -334,12 +334,12 @@
 /*?--------------------- 
 **       LOGO
 ----------------------*/
-.logo {
+.footer .logo {
   margin-inline: auto;
   max-width: 10.625rem;
 }
 
-.logo svg {
+.footer .logo svg {
   width: 100%;
 }
 

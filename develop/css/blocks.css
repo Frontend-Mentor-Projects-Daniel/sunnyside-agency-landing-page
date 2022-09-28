@@ -290,3 +290,11 @@
     grid-gap: 2rem;
   }
 }
+
+/**--------------------- 
+**   IMAGE GALLERY
+----------------------*/
+.image-gallery {
+  grid-gap: 0;
+  --min: 150px;
+}

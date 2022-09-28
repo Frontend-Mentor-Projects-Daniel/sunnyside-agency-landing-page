@@ -230,6 +230,7 @@
 @media only screen and (min-width: 48em) {
   .cherry-and-orange {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(250px, 600px);
   }
 
   .cherry {
@@ -248,5 +249,44 @@
 
   .text-block h3 {
     font-size: 1.25rem;
+  }
+}
+
+/**--------------------- 
+**    TESTIMONIALS
+----------------------*/
+.testimonials {
+  display: grid;
+  grid-gap: 4rem;
+
+  margin-block: var(--space-xl-6xl);
+  margin-inline: var(--space-m-6xl);
+}
+
+.testimonials h4 {
+  grid-column: 1/ -1;
+
+  margin-bottom: var(--space-xl-2xl);
+}
+
+.testimonial {
+  --gap: 2rem;
+
+  align-items: center;
+}
+
+.testimonial__image {
+  border-radius: 50%;
+  display: inline-block;
+  height: 4.5rem;
+  overflow: hidden;
+  width: 4.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr 1fr);
+    grid-gap: 2rem;
   }
 }

@@ -184,20 +184,15 @@
 ** CHERRY AND ORANGE
 ----------------------*/
 .cherry-and-orange {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, minmax(250px, 600px));
 }
 
 .cherry,
 .orange {
-  --gap: 0;
-
-  flex-basis: 50%;
-
-  align-items: flex-end;
-  justify-content: center;
-
-  aspect-ratio: 1;
+  display: grid;
+  align-content: end;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -229,13 +224,12 @@
   --gap: 1.6875rem;
 
   align-items: center;
-
-  transform: translateY(-10%);
+  margin-bottom: 3.6875rem;
 }
 
 @media only screen and (min-width: 48em) {
   .cherry-and-orange {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
   }
 
   .cherry {
@@ -244,10 +238,6 @@
 
   .orange {
     background-image: url('../assets/images/desktop/image-photography.jpg');
-  }
-
-  .text-block {
-    transform: translateY(-30%);
   }
 }
 

@@ -157,6 +157,27 @@
   max-width: 44ch;
 }
 
+/*?--------------------- 
+**  READ-MORE LINKS
+----------------------*/
+.read-more--yellow {
+  border-bottom: 10px solid hsl(var(--clr-yellow), 0.25);
+  border-radius: 1.75rem;
+}
+
+.read-more--yellow:hover {
+  border-bottom: 10px solid hsl(var(--clr-yellow), 1);
+}
+
+.read-more--red {
+  border-bottom: 10px solid hsl(var(--clr-soft-red), 0.25);
+  border-radius: 1.75rem;
+}
+
+.read-more--red:hover {
+  border-bottom: 10px solid hsl(var(--clr-soft-red), 1);
+}
+
 @media only screen and (min-width: 48em) {
   .group {
     --gap: 0;

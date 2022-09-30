@@ -329,6 +329,7 @@
   grid-template-rows: repeat(3, 116.7px);
 
   background-color: hsla(168, 44%, 70%, 1);
+  padding: 0;
 }
 
 /*?--------------------- 
